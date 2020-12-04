@@ -23,6 +23,7 @@
   </context-param>
    -->
   <!-- ex04 설정 --> 
+  <!-- 
   <jsp-config>
     <jsp-property-group>
       <url-pattern>/ex04/view/*</url-pattern>
@@ -30,16 +31,20 @@
       <include-coda>/ex04/common/footer.jspf</include-coda>
     </jsp-property-group>
   </jsp-config>
-  
-  <!--
+   -->
+   
+  <!-- ex07 설정 -->
   <error-page>
     <error-code>404</error-code>
     <location>/error/error404.jsp</location>
   </error-page>
+  
   <error-page>
     <exception-type>java.lang.NullPointerException</exception-type>
     <location>/error/errornullpointer.jsp</location>
   </error-page>
+  
+  <!-- 
   <context-param>
     <param-name>DB_NAME</param-name>
     <param-value>Oracle</param-value>
