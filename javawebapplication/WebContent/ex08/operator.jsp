@@ -7,10 +7,10 @@
 <title>익스프레션 언어 연산자</title>
 </head>
 <body>
-	${param.NUM1}을 ${param.NUM2}로 나눈 몫은? ${param.NUM1 div param.NUM2}
-	<br /> 나머지는? ${param.NUM1 mod param.NUM2}
+	${param.num1}을 ${param.num2}로 나눈 몫은? ${param.num1 div param.num2}
+	<br /> 나머지는? ${param.num1 mod param.num2}
 	<br />
-	<br /> 둘 다 양수입니까? ${(param.NUM1 gt 0) and (param.NUM2 gt 0)}
+	<br /> 둘 다 양수입니까? ${(param.num1 gt 0) and (param.num2 gt 0)}
 	<br />
 </body>
 </html>

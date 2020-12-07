@@ -4,10 +4,10 @@
     <head><title>인사하기</title></head>
     <body>
         <c:choose> 
-            <c:when test="${param.NUM == 0}"> 
+            <c:when test="${param.num == 0}"> 
                 처음 뵙겠습니다. <br />
             </c:when> 
-            <c:when test="${param.NUM == 1}"> 
+            <c:when test="${param.num == 1}"> 
                 반갑습니다. <br />
             </c:when> 
             <c:otherwise> 

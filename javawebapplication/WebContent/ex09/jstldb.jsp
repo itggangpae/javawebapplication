@@ -8,9 +8,9 @@
 <body>
 
 <sql:setDataSource var="conn" driver="com.mysql.jdbc.Driver" 
-				url="jdbc:mysql://localhost:3306/sample?useUnicode=true&characterEncoding=utf8"
+				url="jdbc:mysql://localhost:3306/sample?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC"
 				user="root" 
-				password="wnddkd"/>
+				password=""/>
 
 <sql:update dataSource="${conn}">
 	INSERT INTO booksinfo VALUES ('10011', '제3인류', '베르나르', 13800)
