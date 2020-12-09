@@ -38,6 +38,7 @@
 		</init-param> <init-param> <param-name>suppressSmap</param-name> <param-value>true</param-value> 
 		</init-param> <load-on-startup>3</load-on-startup> </servlet> -->
 	<!-- ex10 설정 -->
+	<!-- 
 	<servlet>
 		<servlet-name>now</servlet-name>
 		<servlet-class>ex10.TimePrint</servlet-class>
@@ -72,4 +73,14 @@
 	<listener>
 		<listener-class>ex10.SessionListenerImpl</listener-class>
 	</listener>
+	-->
+	
+	<!-- ex12 설정 -->
+	<resource-ref>
+		<description>Connection</description>
+		<res-ref-name>DBConn</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
 </web-app>
