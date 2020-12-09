@@ -17,9 +17,10 @@
 			<td>${result.description}</td>
 		</tr>
 		<tr>
-			<td colspan="2" align="center">[
-				<a href="${pageContext.request.contextPath}/ex12/itemupdate/${result.code}">수정하기</a>]&nbsp; [
-				<a href="${pageContext.request.contextPath}/ex12/itemdelete/${result.code}">삭제하기</a>]&nbsp;
+			<td colspan="2" align="center">
+			[<a href="${pageContext.request.contextPath}/ex12/itemupdate/${result.code}">수정하기</a>]&nbsp; [
+			<a href="${pageContext.request.contextPath}/ex12/itemdelete/${result.code}">삭제하기</a>]&nbsp;
+
 			</td>
 		</tr>
 	</table>
