@@ -26,12 +26,9 @@
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
 	function proxy() {
-		$
-				.ajax({
-					url : "proxy",
-					data : {
-						addr : 'http://www.kma.go.kr/weather/forecast/mid-term-xml.jsp?stnId=108'
-					},
+		$.ajax({
+					url : "proxy?addr=http://www.kma.go.kr/weather/forecast/mid-term-xml.jsp?stnId=108",
+				
 					dataType : 'xml',
 					success : function(data) {
 						var cities = $(data).find('city');
@@ -61,6 +58,7 @@
 				})
 	}
 
+	
 	function pushStart() {
 		var eventSource = new EventSource("push");
 		eventSource.onmessage = function(event) {
@@ -68,6 +66,7 @@
 		};
 	}
 
+	
 	//DOM 객체 찾아오기
 	var nickname = 
 		document.getElementById("nickname");
@@ -79,13 +78,13 @@
 		document.getElementById("disp");
 	//웹 소켓 객체 생성
 	var webSocket = new WebSocket(
-		"ws://localhost:9000/javawebapplication/chat");
+		"ws://localhost:8080/javawebapplication/websocket");
 	
 	//연결되었을 때 수행할 내용
 	webSocket.addEventListener(
 		"open", function(event){
 		//채팅은 새로운 메시지를 위에 출력	
-		//disp.value = "접속에 성공\n" + disp.value;
+		disp.value = "접속에 성공\n" + disp.value;
 		webSocket.send(nickname.value + "님 입장");
 	});
 	

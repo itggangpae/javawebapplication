@@ -75,7 +75,7 @@
 	</listener>
 	-->
 	
-	<!-- ex12 설정 -->
+	<!-- ex12, 13 설정 -->
 	<resource-ref>
 		<description>Connection</description>
 		<res-ref-name>DBConn</res-ref-name>
