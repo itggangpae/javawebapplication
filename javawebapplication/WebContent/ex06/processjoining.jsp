@@ -3,7 +3,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="memberInfo" class="ex06.MemberInfo" />
+<jsp:useBean id="memberInfo" class="ex06.Member" />
 <jsp:setProperty name="memberInfo" property="*" />
 <jsp:setProperty name="memberInfo" property="password"
 				 value="<%= memberInfo.getId() %>" />

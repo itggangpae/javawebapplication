@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <jsp:useBean id="member" scope="request"
-             class="ex06.MemberInfo" />
+             class="ex06.Member" />
 <html>
 <head><title>인사말</title></head>
 <body>

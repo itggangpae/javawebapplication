@@ -2,7 +2,7 @@ package ex06;
 
 import java.io.Serializable;
 import java.util.Date;
-public class MemberInfo implements Serializable, Cloneable, Comparable<MemberInfo> {
+public class Member implements Serializable, Cloneable, Comparable<Member> {
 	private static final long serialVersionUID = 1L;
 	private String id;
 	private String password;
@@ -10,10 +10,10 @@ public class MemberInfo implements Serializable, Cloneable, Comparable<MemberInf
 	private String address;
 	private Date registerDate;
 	private String email;
-	public MemberInfo() {
+	public Member() {
 		super();
 	}
-	public MemberInfo(String id, String password, String name, String address,
+	public Member(String id, String password, String name, String address,
 			Date registerDate, String email) {
 		super();
 		this.id = id;
@@ -65,7 +65,7 @@ public class MemberInfo implements Serializable, Cloneable, Comparable<MemberInf
 	}
 
 	@Override
-	public int compareTo(MemberInfo o) {
+	public int compareTo(Member o) {
 		return id.compareTo(o.id);
 	}
 	@Override
@@ -74,11 +74,11 @@ public class MemberInfo implements Serializable, Cloneable, Comparable<MemberInf
 				+ ", address=" + address + ", registerDate=" + registerDate
 				+ ", email=" + email + "]";
 	}
-	public MemberInfo clone(){
-		MemberInfo obj = new MemberInfo(id, password, name, address, registerDate, email);
+	public Member clone(){
+		Member obj = new Member(id, password, name, address, registerDate, email);
 		return obj;
 	}
-	public boolean equals(MemberInfo obj){
+	public boolean equals(Member obj){
 		if(id.equals(obj.id))
 			return true;
 		else

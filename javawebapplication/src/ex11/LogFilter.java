@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Servlet Filter implementation class LogFilter
  */
-@WebFilter("/*")
+
 public class LogFilter implements Filter {
 
 	PrintWriter writer;
